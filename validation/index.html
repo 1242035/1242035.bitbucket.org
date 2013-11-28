@@ -1,20 +1,32 @@
 <html>
 <head>
-	<title>Simple Validation</title>
+	<title>Validation</title>
 	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="Validation.js"></script>
 	<script>
-	$(function() {
-		var email = 'fuongit@gmail.com';
+		function checkEmail(){
+	
+		var email = $('#email').val();
 		if (Validation.email(email)) {
 			alert('Email matched');
 		} else {
 			alert('Email not matched');
 		}
-	});
+	}
 	</script>
+	<style>
+		.wrapper{
+				width:50%;
+				height:60%;
+				margin:auto;
+				background-color:green;
+		}
+	</style>
 </head>
 <body>
-
+<div class="wrapper">
+	Input Email: <input type="text" name="Email" id="email"/>
+	<button type="button" onclick="alert('Hello world!')">Check</button>
+</div>
 </body>
 </html>
