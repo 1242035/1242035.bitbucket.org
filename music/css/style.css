@@ -631,13 +631,7 @@ ul#slide-list li a:hover {
     background-position: 0 -12px;
     cursor: pointer;
 }
-#tray-arrow {
-width: 30px;
-padding: 5px;
--moz-box-shadow: 0 0 5px #888;
--webkit-box-shadow: 0 0 5px#888;
-box-shadow: 0 0 5px #888;
-}
+
 #tray-button {
     position: absolute;
     bottom: 0;
@@ -867,6 +861,13 @@ cursor:pointer;
 }
 #show-list-button img{
 z-index:9999;
+}
+#tray-arrow {
+width: 30px;
+/*padding: 5px;*/
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
 }
 #title{
 height: 50px;
