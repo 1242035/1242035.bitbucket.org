@@ -1,15 +1,123 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0;url=http://1242035.bitbucket.org/">
-        <script type="text/javascript">
-            window.location.href = "http://1242035.bitbucket.org/"
-        </script>
-        <title>Sticky Notes</title>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow the <a href='http://1242035.bitbucket.org/'>Sticky Notes</a>
-    </body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nghe Nhạc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--<link href="css/jplayer.morning.light.css" rel="stylesheet" type="text/css" /> -->
+<!--link href="skin/ftskin/ft-player-style.css" rel="stylesheet" type="text/css" /-->
+<link href="skin/midnight.black/jplayer.midnight.black.css" rel="stylesheet" type="text/css" />
+<link href="js/scrollbar/perfect-scrollbar-0.4.3.min.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/supersized/slideshow/js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="js/supersized/jquery.slide.js"></script>
+<script type="text/javascript" src="js/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer/addon/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.custom.js"></script>
+<!--<script type="text/javascript" src="js/scrollbar/perfect-scrollbar-0.4.3.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+<script>
+	var _go = 0;
+	setInterval(function(){clock()},100);
+	function clock()
+	{
+		_go = _go + 1;
+		if (_go >= 100) _go = 0;
+		$('#progress-bar').css('width',_go+'%');		
+	}
+</script>
+</head>
+<body>
+<div id="banner-left">
+</div>
+
+<div id="wrapper">
+<div id="container">
+    
+    <div id="jquery_jplayer_1" class="jp-jplayer" style="height: 0px;"></div>
+
+		<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-time-holder">
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+					</div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+			
+					</ul>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Yêu cầu</span>
+					Để chơi nhạc bạn cần nâng cấp phiên bản <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div></div></div>    
+</div>
+<div id="menu-tray">
+	<ul>
+		<li id="search-zone">
+			<div id="search">
+				<form id="submitform" action="" method="get">
+					<input id="query" type="text" name="q" value="Tìm kiếm bài hát ... " />
+					<input type="submit" name="submit" value="S" />
+				</form>
+			</div>
+		</li>
+        <li id="129" class="items-load">Nhạc Trẻ</li>
+        <li id="130" class="items-load">Nhạc Trữ Tình</li>
+        <li id="135" class="items-load">Nhạc Quê Hương</li>
+        <li id="137" class="items-load">Nhạc Cách Mạng</li>
+        <li id="139" class="items-load">Nhạc Thiếu Nhi</li>
+        <li id="131" class="items-load">Nhạc Dance</li>       
+        <li id="132" class="items-load">Nhạc Nước Ngoài</li>       
+        <li id="133" class="items-load">Nhạc Không Lời</li> 
+               
+	</ul>
+</div>	
+ <div id="controls-wrapper" class="load-item">
+	<div id="controls">								
+        <div class="centered-controls" style="display:none">
+            <a id="prevslide" class="load-item" ><img src="http://nhackhongloi.org/images/back.png" alt=""></a>
+            <a id="play-button"><img id="pauseplay" src="http://nhackhongloi.org/images/pause.png" alt=""></a>
+            <a id="nextslide" class="load-item"><img src="http://nhackhongloi.org/images/forward.png" alt=""></a>
+        </div><!--end centered-controls-->			        
+    </div><!--end controls-->        
+</div>
+<div id="progress-back" class="load-item">
+    <div id="progress-bar"></div>
+</div>
+<div id="show-list-button"><img id="tray-arrow" src="http://nhactructuyen.com/images/menu-ico.png" alt=""></div> 
+<div id="show-theme-list">
+	<img id="go-cartoons" src="http://nhactructuyen.com/wallpapers/hoat-hinh/rise-of-the-guardians-1.jpg" width="70" alt="chu de hoat hinh" title="Chủ đề hoạt hình">
+</div>
+<div id="show-theme-list-natural">
+	<img id="go-natural" src="http://nhackhongloi.org/images/gallery/slide148.jpg" width="70" alt="chu de hoat hinh" title="Chủ đề thiên nhiên">
+</div>     				
+</body>
 </html>
